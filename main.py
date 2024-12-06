@@ -1,83 +1,92 @@
 """
-Datetime Moduli
+Math Moduli
 """
+from random import random
+from tkinter import image_types
 
 # 1 vazifa
 
+# import math
 #
-# from datetime import date ,datetime , timedelta
+# class Doira_yuzi:
+#     def __init__(self , radius):
+#         self.radius = radius
 #
+#     def yuza_topish(self):
+#         yuza = math.pi * math.pow(self.radius , 2)
+#         return f"Aylana yuzasi {yuza}"
 #
-# class Datani_olish:
-#     def bugungi_sana(self):
-#         bugungi_sana = date.today()
-#         return bugungi_sana
-#
-#     def yetti_kun_oldin(self):
-#         yeti = timedelta(days=7)
-#         bugungi_sana = date.today()
-#         return bugungi_sana - yeti
-#
-#     def yetti_kun_keyin(self):
-#         yeti = timedelta(days=7)
-#         bugungi_sana = date.today()
-#         return bugungi_sana + yeti
-#
-# sana = Datani_olish()
-# print(sana.bugungi_sana())
-# print(sana.yetti_kun_oldin())
-# print(sana.yetti_kun_keyin())
+# r = input("Ayana yuzinini kiriting : ")
+# if r.isdigit():
+#     r = int(r)
+#     aylana1 = Doira_yuzi(r)
+#     print(aylana1.yuza_topish())
+# else:
+#     print("Aylana radiyusini raqam bilan kiriting !!!")
 
 
+
+# ----------------------------------------------------------------------
 
 # 2 vazifa
 
-
-# from datetime import date ,datetime , timedelta
+# import math
 #
-# class Tugulgan_kun_qoldi:
-#     def __init__(self , sana_str):
-#         self.sana_str = sana_str
+# class Math_uchun:
+#     def __init__(self , son):
+#         self.son = son
 #
-#     def sana_string_to_date(self):
-#         sana = datetime.strptime(self.sana_str , "%d-%m-%Y")
-#         bugun = datetime.now()
-#         if sana.replace(year=bugun.year) < bugun:
-#             sana = sana.replace(year=bugun.year + 1)
+#     def kivadirat_ildiz(self):
+#         return math.sqrt(self.son)
 #
-#         else:
-#             sana = sana.replace(year=bugun.year)
+#     def kub_ildiz(self):
+#         return math.pow(self.son , 1/3)
 #
-#         qoldi = sana - bugun
-#         if qoldi.days == 364:
-#             return "Tugulgan kunigiz bilan 🔥🔥 "
-#         else:
-#             return f"{qoldi.days} kun "
-# tugulgan_kun = input("Tugulgan kunigizni yuboring (dd-mm-YYYY) : ")
-# kun1 = Tugulgan_kun_qoldi(tugulgan_kun)
-# print(kun1.sana_string_to_date())
+# sonn = input("Musabat son kiritng : ")
+# if sonn.isdigit():
+#     sonn = int(sonn)
+#     hisob1 = Math_uchun(sonn)
+#     print(f"Kub ildizi {hisob1.kub_ildiz()} ")
+#     print(f"Kivadirat ildizi {hisob1.kivadirat_ildiz()} ")
+# else:
+#     raise ValueError
 
 
 
+"""
+Random Moduli
+"""
 
 
-# 3 vazifa
+# import random
+#
+# a = []
+# b = []
+# for i in range(3):
+#     son_0_1 = random.random()
+#     b.append(son_0_1)
+#
+#
+# for i in range(5):
+#     son_1_100 = random.randint(1,100)
+#     a.append(son_1_100)
+#
+# print(f"a uchun 5 ta son = {a}")
+# print(f"b uchun 3 ta son = {b}")
+# print(f"Shu sonlarning o'rtachasi {(sum(a) + sum(b))/8}")
 
-# import time
-#
-#
-# time1 = "12:10:00"
-# time2 = "12:10:50"
-#
-# timee1 = time.strptime(time1 , "%H:%M:%S")
-# timee2 = time.strptime(time2 , "%H:%M:%S")
-#
-# time1_sec = timee1.tm_hour * 3600 + timee1.tm_min * 60 + timee1.tm_sec
-# time2_sec = timee2.tm_hour * 3600 + timee2.tm_min * 60 + timee2.tm_sec
-#
-# farqi = time2_sec - time1_sec
-#
-# print(farqi)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
